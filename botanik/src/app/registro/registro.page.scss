@@ -1,0 +1,83 @@
+/* header transparente */
+ion-header.registro-header,
+ion-header.registro-header ion-toolbar {
+  --background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+/* fondo del contenido */
+ion-content.registro-content {
+  --background: #BFFCBB;
+  position: relative; 
+  padding-bottom: 240px; 
+  min-height: 100vh;
+
+}
+
+/* contenedor del formulario */
+.registro-form {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: transparent;
+}
+
+/* quitar fondo por defecto de ion-item */
+.registro-form ion-item {
+  --background: transparent;
+  margin-bottom: 12px;
+}
+
+.registro-card {
+  width: 90%;
+  max-width: 420px;
+  margin: 48 px 0 auto;
+  padding: clamp(16px, 5vw, 24px); //reponsivo
+  background: transparent; 
+  color:aquamarine;
+  margin-bottom: 48px;
+
+}
+
+/* formulario dentro de la tarjeta */
+.registro-form ion-item {
+  --background: transparent;
+  margin-bottom: 12px;
+}
+
+
+
+/* botón y espaciado */
+ion-button.button-container {
+  margin-top: 24px;
+  --color: #FFFFFF;
+  --background: #9370DB;
+}
+
+.registro-footer {
+  --background: transparent;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-image-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 240px;
+  z-index: 1;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
+  transform: translateY(-80px);
+  object-fit: cover;
+  opacity: 0.6;
+}

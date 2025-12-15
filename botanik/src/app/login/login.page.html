@@ -1,0 +1,99 @@
+<ion-header class="login-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <app-logo></app-logo>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-content" fullscreen>
+  <ion-card class="login-card">
+    <form (ngSubmit)="login()" class="login-form">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input
+          data-test="login-email" 
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input
+          data-test="login-password"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <div class="button-container">
+        <ion-button
+          data-test="login-submit"
+          class="color-hover"
+          expand="block"
+          type="submit">
+          Iniciar sesión
+        </ion-button>
+      </div>
+    </form>
+  </ion-card>
+
+  <div class="footer-image-container">
+    <img
+      src="assets/img/footer_watercolor.png"
+      alt="Jardín Botanik"
+      class="footer-image" />
+  </div>
+</ion-content>
+
+
+
+
+
+
+<!-- **html anterior, comentado, para ver diferencia**
+<ion-header class="login-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <app-logo></app-logo>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-content" fullscreen>
+  <ion-card class="login-card">
+    <form (ngSubmit)="login()" class="login-form">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+
+      <div class="button-container">
+        <ion-button class="color-hover" expand="block" type="submit">
+          Iniciar sesión
+        </ion-button>
+      </div>
+    </form>
+  </ion-card>
+
+  <div class="footer-image-container">
+    <img src="assets/img/footer_watercolor.png" alt="Jardín Botanik" class="footer-image" />
+  </div>
+</ion-content>
+-->

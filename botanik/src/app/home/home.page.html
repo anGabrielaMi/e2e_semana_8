@@ -1,0 +1,24 @@
+<ion-header class="login-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="logo-container">
+      <span class="title-right">Home</span>
+      <app-logo></app-logo>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-content" fullscreen>
+<ion-card class="home-card slide-up" *ngFor="let categoria of categorias" (click)="verCategoria(categoria)">
+    <ion-card-header>
+      <ion-card-title>{{ categoria.titulo }}</ion-card-title>
+    </ion-card-header>
+    <ion-img [src]="categoria.imagen" class="card-image"></ion-img>
+    <ion-card-content>
+      <p>{{ categoria.descripcion }}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

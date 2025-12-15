@@ -1,0 +1,64 @@
+<ion-header class="login-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="logo-container">
+      <app-logo></app-logo>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Regalos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Kit aromático</h2>
+        <p>Incluye lavanda, romero y vela natural</p>
+      </ion-label>
+      <ion-note slot="end" color="success">$9.900</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Maceta personalizada</h2>
+        <p>Con mensaje grabado y planta a elección</p>
+      </ion-label>
+      <ion-note slot="end" color="success">$7.500</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Mini jardín interior</h2>
+        <p>Composición de suculentas en caja de madera</p>
+      </ion-label>
+      <ion-note slot="end" color="success">$12.800</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Tarjeta Botanik</h2>
+        <p>Vale regalo para elegir cualquier planta</p>
+      </ion-label>
+      <ion-note slot="end" color="success">$5.000</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Set de té herbal</h2>
+        <p>Infusiones de manzanilla, salvia y menta</p>
+      </ion-label>
+      <ion-note slot="end" color="success">$6.900</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <div class="footer-image-container">
+    <img src="assets/img/footer_watercolor.png" alt="Jardín Botanik" class="footer-image" />
+  </div>
+</ion-content>

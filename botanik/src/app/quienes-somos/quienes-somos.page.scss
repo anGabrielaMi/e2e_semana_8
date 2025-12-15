@@ -1,0 +1,67 @@
+/* Header transparente con logo centrado */
+ion-header.somos-header,
+ion-header.somos-header ion-toolbar {
+  --background: transparent;
+  box-shadow: none;
+  border: none;
+  ion-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 64px;
+
+    app-logo {
+      height: 64px;
+      width: auto;
+    }
+  }
+}
+
+/* Fondo verde suave y espacio para el footer */
+ion-content.somos-content {
+  --background: #BFFCBB;
+  position: relative;
+  padding-bottom: 240px;
+  min-height: 100vh;
+}
+
+/* Tarjeta de presentación */
+.somos-card {
+  width: 90%;
+  max-width: 420px;
+  margin: 48px auto;
+  padding: clamp(16px, 5vw, 24px);
+  background: transparent;
+  color: #333;
+
+  ion-card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(112, 4, 122);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  ion-card-content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Imagen decorativa del footer */
+.footer-image-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 240px;
+  z-index: 1;
+
+  .footer-image {
+    width: 100%;
+    height: auto;
+    transform: translateY(-80px);
+    object-fit: cover;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,46 @@
+<ion-header class="registro-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+  <ion-menu-button autoHide="false"></ion-menu-button>
+</ion-buttons>
+    <ion-title>
+      <app-logo></app-logo>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="registro-content" fullscreen>
+  <ion-card class="registro-card">
+    <form (ngSubmit)="registro()" class="registro-form">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="name" name="name" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Confirmar contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" required></ion-input>
+      </ion-item>
+
+      <div class="boton-contenedor">
+       <ion-button class="button-container" expand="block" (click)="registro()">Registrarse
+         
+        </ion-button>
+      </div>
+    </form>
+  </ion-card>
+
+  <div class="imagen-footer-contenedor">
+    <img src="assets/img/footer_watercolor.png" alt="Jardín Botanik" class="imagen-footer" />
+  </div>
+</ion-content>

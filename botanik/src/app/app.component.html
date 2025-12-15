@@ -1,0 +1,26 @@
+<ion-menu class="menu-botanik" contentId="main-content" side="start" menuId="main" type="overlay">
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Botanik</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item lines="none">
+        Sesión: {{ userEmail }}
+      </ion-item>
+
+      <ion-item class="fade-in" button routerLink="/home" routerDirection="root" (click)="closeMenu()">Home</ion-item>
+      <ion-item class="fade-in" button routerLink="/ofertas" (click)="closeMenu()">Ofertas</ion-item>
+      <ion-item class="fade-in" button routerLink="/quienes-somos" (click)="closeMenu()">Sobre Botanik</ion-item>
+      <ion-item class="fade-in" button routerLink="/login" (click)="closeMenu()">Login</ion-item>
+      <ion-item class="fade-in" button routerLink="/registro" (click)="closeMenu()">Registro</ion-item>
+      <ion-item class="fade-in" button routerLink="/modificar-perfil" (click)="closeMenu()">Modificar perfil</ion-item>
+      <ion-item class="fade-in" button (click)="cerrarSesion()">Cerrar sesión</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ofertas Botanik</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ofertas-content">
+  <ion-list>
+    <ion-item *ngFor="let oferta of ofertas">
+      <ion-thumbnail slot="start">
+        <img [src]="oferta.imagen" alt="{{ oferta.titulo }}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ oferta.titulo }}</h2>
+        <p>{{ oferta.descripcion }}</p>
+        <strong>{{ oferta.precio }}</strong>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <div class="footer-image-container">
+    <img src="assets/img/footer_watercolor.png" alt="Jardín Botanik" class="footer-image" />
+  </div>
+</ion-content>
